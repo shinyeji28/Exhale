@@ -1,8 +1,6 @@
 # 날: 숨
 실어증 환자 분들이 자연스럽게 말을 하는 그 날까지 함께 하겠습니다.
 
-<img src="https://github.com/gunjoon98/readme/assets/48176143/359ac85b-19a0-4b29-b29b-5edfc27d19b1)https://github.com/gunjoon98/readme/assets/48176143/359ac85b-19a0-4b29-b29b-5edfc27d19b1" width="700" height="400"/>
-
 ## 목차
 1. 개요
 2. 주요 기능
