@@ -6,14 +6,15 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-    @Override
-    public void addCorsMappings(CorsRegistry registry){
-        registry.addMapping("/**")
-//                .allowedOrigins("http://i10b208.p.ssafy.io:80", "http://localhost:5173")
-                .allowedOriginPatterns("*")
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD")
-                .allowedHeaders("*")
-                .allowCredentials(true)
-                .maxAge(3600);
-    }
+    // SecurityConfig에 의해서 WebConfig는 적용되지 않음
+//     @Override
+//     public void addCorsMappings(CorsRegistry registry){
+//         registry.addMapping("/**")
+// //                .allowedOrigins("http://i10b208.p.ssafy.io:80", "http://localhost:5173")
+//                 .allowedOriginPatterns("*")
+//                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD")
+//                 .allowedHeaders("*")
+//                 .allowCredentials(true)
+//                 .maxAge(3600);
+//     }
 }
