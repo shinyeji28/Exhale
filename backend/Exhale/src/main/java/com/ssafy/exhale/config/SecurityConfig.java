@@ -48,21 +48,10 @@ public class SecurityConfig {
                     @Override
                     public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                         CorsConfiguration configuration = new CorsConfiguration();
-                        configuration.setAllowedOriginPatterns(Collections.singletonList("*"));
-                        //configuration.setAllowedOrigins(Arrays.asList("http://localhost:5173", "http://i10b208.p.ssafy.io:80"));
-//                        // 요청이 온 Origin 헤더 확인
-//                        String origin = request.getHeader("Origin");
-//                        System.out.println(origin);
-//                        // localhost:5173 출처에 대한 CORS 정책 설정
-//                        if ("http://localhost:5173".equals(origin)) {
-//                            configuration.setAllowedOrigins(Collections.singletonList(origin));
-//                        }
-//
-//                        // i10b208.p.ssafy.io:80 출처에 대한 CORS 정책 설정
-//                        if ("http://i10b208.p.ssafy.io:80".equals(origin)) {
-//                            configuration.setAllowedOrigins(Collections.singletonList(origin));
-//                        }
-                        configuration.setAllowedMethods(Collections.singletonList("*"));
+                        // configuration.setAllowedOriginPatterns(Collections.singletonList("*"));
+                        configuration.setAllowedOrigins(Arrays.asList("http://localhost:5173", "http://i10b208.p.ssafy.io:80","https://i10b208.p.ssafy.io"));
+                        // configuration.setAllowedMethods(Collections.singletonList("*"));
+                        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
                         configuration.setAllowCredentials(true);
                         configuration.setAllowedHeaders(Collections.singletonList("*"));
                         configuration.setMaxAge(3600L);      // 1시간 동안 캐시하도록 설정
